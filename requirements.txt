@@ -1,0 +1,4 @@
+azure-functions==1.9.0
+azure-identity==1.7.1
+azure-keyvault-secrets==4.3.0
+requests==2.27.1
