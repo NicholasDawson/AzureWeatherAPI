@@ -29,7 +29,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     credential = DefaultAzureCredential()
     client = SecretClient(vault_url=key_vault_url, credential=credential)
 
-    secret_name = os.environ['API_KEY_SECRET_NAME']
+    secret_name = os.environ['OPENWEATHER_SECRET_NAME']
     retrieved_secret = client.get_secret(secret_name)
     api_key = retrieved_secret.value
 
